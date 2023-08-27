@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedelmäpeli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    
+    <div id="name"> HEDELMÄPELI</div>
+
+    <div id="tilanne">
+        <p>RAHAA:  <span id="rahaa">50</span> €</p>
+        <p>PANOS:  <span id="panos">1</span> €</p>
+        <div id="kolikot">
+            <img src="images/coin1.png" width="50px" height="50px" onclick="panos1()">
+            <img src="images/coin2.png" width="50px" height="50px" onclick="panos2()">
+            <img src="images/coin3.png" width="50px" height="50px" onclick="panos3()">
+        </div>
+    </div>
+
+    <div id="palkinnot">
+        <div id="laatikko">
+            <img src="images/apple.png" width="50px" height="50px">
+            <img src="images/apple.png" width="50px" height="50px">
+            <img src="images/apple.png" width="50px" height="50px">
+            <img src="images/apple.png" width="50px" height="50px">
+
+            <img src="images/equals-sign.png" width="40px" height="40px">
+            <img src="images/2.png" width="30px" height="35px">
+
+            
+            <img src="images/coin.png" width="50px" height="50px">
+
+        </div>
+        <div id="laatikko">
+            <img src="images/pear.png" width="50px" height="50px">
+            <img src="images/pear.png" width="50px" height="50px">
+            <img src="images/pear.png" width="50px" height="50px">
+            <img src="images/pear.png" width="50px" height="50px">
+            <img src="images/equals-sign.png" width="40px" height="40px">
+            <img src="images/4.png" width="30px" height="40px">
+            
+            <img src="images/coin.png" width="50px" height="50px">
+        </div>
+        <div id="laatikko">
+            <img src="images/cherry.png" width="50px" height="50px">
+            <img src="images/cherry.png" width="50px" height="50px">
+            <img src="images/cherry.png" width="50px" height="50px">
+            <img src="images/cherry.png" width="50px" height="50px">
+            <img src="images/equals-sign.png" width="40px" height="40px">
+            <img src="images/6.png" width="30px" height="35px">
+            <img src="images/coin.png" width="50px" height="50px">
+        </div>
+        <div id="laatikko">
+            <img src="images/watermelon.png"width="50px" height="50px">
+            <img src="images/watermelon.png"width="50px" height="50px">
+            <img src="images/watermelon.png"width="50px" height="50px">
+            <img src="images/watermelon.png"width="50px" height="50px">
+            <img src="images/equals-sign.png" width="40px" height="40px">
+            <img src="images/8.png" width="30px" height="35px">
+            <img src="images/coin.png" width="50px" height="50px">
+        </div>
+        <!--<div id="laatikko">     tarviiko näitä ja pitääkö vaihtaa palkinnot valitun panoksen mukaan?
+            <img src="images/7.png" width="50px" height="50px">
+            <img src="images/7.png" width="50px" height="50px">
+            <img src="images/7.png" width="50px" height="50px">
+            <img src="images/equals-sign.png" width="40px" height="40px">
+            <img src="images/2.png" width="30px" height="35px">
+            <img src="images/coin.png" width="50px" height="50px">
+        </div>
+        <div id="laatikko">
+            <img src="images/7.png" width="50px" height="50px">
+            <img src="images/7.png" width="50px" height="50px">
+            <img src="images/7.png" width="50px" height="50px">
+            <img src="images/7.png" width="50px" height="50px">
+            <img src="images/equals-sign.png" width="40px" height="40px">
+            <img src="images/2.png" width="30px" height="35px">
+            <img src="images/coin.png" width="50px" height="50px">
+        </div> -->
+    </div>
+
+    <div id="peli">
+
+    </div>
+
+
+    <div id="peli">
+
+        <div id="peli2">
+            <img src="images/apple.png" width="100px" height="100px">
+            <img src="images/watermelon.png" width="100px" height="100px">
+            <img src="images/pear.png" width="100px" height="100px">
+            <img src="images/cherry.png" width="100px" height="100px">
+            
+        
+        </div>
+        
+        <div id="peli3"> 
+            <img src="images/lock-icon.png" width="100px" height="100px" onclick="">
+            <img src="images/lock-icon.png" width="100px" height="100px" onclick="">
+            <img src="images/lock-icon.png" width="100px" height="100px" onclick="">
+            <img src="images/lock-icon.png" width="100px" height="100px" onclick="">
+        </div>
+    </div>
+
+
+    <button id="pelaa" onclick="pelaa()">PELAA</button>
+
+
+
+
+</body>
+</html>

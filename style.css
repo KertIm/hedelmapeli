@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --dark: #464747;
+    --text: #8e3899;
+    --shadow: rgb(114 4 68);
+    --white: #ffffff;
+    --grey: #333333;
+    --light: #605f5f;
+    --box: #9b84db;
+    --button: #4d3396;
+    --black: #000000;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--grey);
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#name{
+    font-family: 'Alkatra', cursive;
+    font-size: 50px;
+    text-shadow: 3px 3px var(--shadow);
+    text-decoration: solid;
+    
+    background-color: var(--box);
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-content: center;
+    
+    width: 1550px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 100%;
+}
+/*tilanne*/
+#tilanne{
+    background-color: var(--box);
+    border-radius: 10px;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    font-family: 'Alkatra', cursive;
+    font-size: 20px;
+    margin-left: 750px;/*aligns box*/
+    
+
+}
+
+/*palkinnot*/
+#palkinnot{
+    background-color: var(--box);
+    border-radius: 10px;
+    width: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 1400px;
+    margin-top: -230px;
+    
+    
+}
+#laatikko{
+    background-color: var(--light);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    
+    
+    
+}
+/*  button  */
+#pelaa{
+    background-color: var(--button);
+    font-size: 40px;
+    font-family: 'Alkatra', cursive;
+    border-radius: 10px;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 1500px;
+    margin-top: -100px;       /*fix position*/
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 5px;
+}
+
+
+#peli{
+    background-color: var(--box);
+    width: 650px;
+    border-radius: 10px;
+    border: var(--black);
+    
+   /*  border: 5px solid var(--black); */
+
+    margin-top: 20px;
+    margin-left: 600px;
+    
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    
+}
+#peli2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+    display: flex;         
+    gap: 45px;
+}   
+#peli3{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+    display: flex;         
+    gap: 45px;
+}  
+    /*     margin: 0px 10px 30px 20px;      this works for puttin gap between img    */
+
+
+
+    @media (max-width: 800px) {     /*   need to align things  also align on different sizes    */
+        #name {
+          font-size: 30px; 
+          text-shadow: 1px 1px var(--shadow);
+          margin-left: 5%;
+          margin-right: 5%;
+          width: 410px;
+        }
+        body{
+            
+        }
+    }
