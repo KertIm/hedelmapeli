@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-:root{
+:root {
     --dark: #464747;
     --text: #8e3899;
     --shadow: rgb(114 4 68);
@@ -23,7 +23,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-#name{
+#name {
     font-family: 'Alkatra', cursive;
     font-size: 50px;
     text-shadow: 3px 3px var(--shadow);
@@ -36,8 +36,6 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     align-content: center;
-    position: center;    
-    width: 1000px;
     margin: auto;
     width: 50%;
     margin-bottom: 10px;
@@ -45,25 +43,26 @@ body {
     font-weight: bold;
     max-width: 100%;
 }
-#kolikot{
-    display: flex;         
-    gap: 20px;
-    margin-left: 10%;
+#kolikot {
+    display: flex;
+    gap: 10px;
+    margin-left: 5%;
 }
-#laatikko{
+#laatikko {
     background-color: var(--light);
     border-radius: 10px;
     margin-bottom: 5px;
-    margin-right: 0px;
+    width: 300px;
+    max-width: 100%;
 }
 .keskitys {
     display: flex;
     flex-direction: row;
-    gap: 50px;   
-    margin-left: 15%;
-    margin-right: 15%;   
+    gap: 30px;
+    margin: auto;
+    width: 50%;
 }
-.keskitys > div {
+.keskitys>div {
     background-color: var(--box);
     border-radius: 10px;
     height: 300px;
@@ -77,50 +76,63 @@ body {
     border-style: solid;
     border-color: var(--black);
     border-width: 5px;
-} 
-#palkinnot{
-    width: 450px;
+}
+#palkinnot {
+    width: 330px;
+    height: 250px;
+    max-width: 100%;
+}
+#laatikko>img {
+    height: 35px;
+    width: 35px;
 }
 #tilanne {
-    width: 300px;
+    width: 250px;
     height: 220px;
+    max-width: 100%;
 }
-.keskitysPeli {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;   
-    margin-left: 10%;
-    margin-right: 10%;  
-    margin-top: 10px; 
-}
-#peli2{
+#peli2 {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     background-color: var(--box);
-    width: 560px;
+    width: 520px;
     border-radius: 10px;
     border-style: solid;
     border-color: var(--black);
     border-width: 5px;
-    display: flex;         
+    display: flex;
     gap: 45px;
-}   
-#peli3{
+    margin: auto;
+    margin-top: 10px;
+    max-width: 100%;
+}
+#peli2>img {
+    height: 90px;
+    width: 90px;
+}
+#peli3 {
     padding-top: 5px;
     padding-bottom: 20px;
     padding-left: 10px;
     background-color: var(--box);
-    width: 560px;
-    border-radius: 10px;    
+    width: 520px;
+    border-radius: 10px;
     border-style: solid;
     border-color: var(--black);
-    border-width: 5px;   
-    display: flex;         
+    border-width: 5px;
+    display: flex;
     gap: 45px;
-}  
-/*  button  */
-#pelaa{
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    max-width: 100%;
+}
+#peli3>img {
+    height: 90px;
+    width: 90px;
+}
+#pelaa {
     background-color: var(--button);
     font-size: 40px;
     font-family: 'Alkatra', cursive;
@@ -130,10 +142,12 @@ body {
     padding-bottom: 15px;
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 50px;
     border-style: solid;
     border-color: var(--black);
     border-width: 5px;
+    display: flex;
+    gap: 45px;
+    margin: auto;
 }
 .container {
     height: 100px;
@@ -141,14 +155,14 @@ body {
     border-radius: 8px;
     position: relative;
     cursor: pointer;
-  }
-  input[type="checkbox"] {
+}
+input[type="checkbox"] {
     position: relative;
     margin-top: 100px;
     width: 100%;
     cursor: pointer;
-  }
-  .container img {
+}
+.container img {
     width: 70%;
     position: absolute;
     margin: auto;
@@ -157,122 +171,147 @@ body {
     top: 0;
     bottom: 0;
     cursor: pointer;
-  }
-  #lock1 {
-    background-color: aqua;
-  }
+}
 
-
-
-
-
-/*       min 800     */
-@media (max-width: 1000px) { 
+@media screen and (max-width: 1000px) {
     #name {
-        font-size: 30px; 
+        font-size: 40px;
         text-shadow: 1px 1px var(--shadow);
         width: 410px;
     }
-    #palkinnot{
-        margin-top: -0px;
-        margin-left: 5px;
-        height: 230px;
+    #palkinnot {
+        height: 250px;
     }
-    #laatikko > img {
-        width: 30px;
-        height: 30px;
+    #laatikko>img {
+        width: 38px;
+        height: 38px;
     }
-    .keskitysPeli {
-        gap: 5px;   
-        margin: center; 
-        margin-top: 10px; 
-    }
-    #peli2{
+    #peli2 {
         width: 420px;
         gap: 10px;
-        margin-top: 00px;
-        margin-left: -10%;
         padding-left: 20px;
     }
-    #peli2 > img {
+    #peli2>img {
         width: 80px;
         height: 80px;
     }
-    #peli3{
+    #peli3 {
         width: 420px;
         gap: 10px;
-        margin-left: -10%;
-        margin-top: 5px;
         padding-left: 5px;
     }
-    #peli3 > img {
+    #peli3>img {
         width: 50px;
         height: 50px;
     }
-    #pelaa{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    #kolikot{       
+    #kolikot {
         gap: 20px;
         margin: auto;
-    } 
-    #kolikot > img {
+    }
+    #kolikot>img {
+        width: 40px;
+        height: 40px;
+    }
+    .keskitys {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .keskitys {
+        flex-direction: column-reverse;
+        width: 40%;
+    }
+    #palkinnot {
+        width: 280px;
+        height: 200px;
+    }
+    #tilanne {
+        width: 250px;
+        padding-left: 30px;
+        padding-top: 0px;
+        height: 190px;
+    }
+    #kolikot {
+        margin-left: -20px;
+    }
+    #laatikko {
+        width: 250px;
+    }
+    #laatikko>img {
+        width: 18px;
+        height: 18px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .keskitys {
+        flex-direction: column-reverse;
+        width: 60%;
+    }
+    #palkinnot {
+        width: 250px;
+        height: 210px;
+    }
+    #tilanne {
+        width: 250px;
+        padding-left: 30px;
+        height: 190px;
+        padding-top: 0px;
+    }
+    #kolikot {
+        margin-left: 5px;
+    }
+    #laatikko {
+        width: 220px;
+    }
+    #laatikko>img {
+        width: 22px;
+        height: 22px;
+    }
+    #peli2 {
+        width: 320px;
+        gap: 10px;
+    }
+    #peli2>img {
+        width: 60px;
+        height: 60px;
+    }
+    #peli3 {
+        width: 320px;
+        gap: 0px;
+    }
+    #peli3>img {
         width: 40px;
         height: 40px;
     }
 }
-/*min-width:501) and ( 
-@media ( max-width: 799px) { 
-    #name {
-        font-size: 30px; 
-        text-shadow: 1px 1px var(--shadow);
-        margin-left: 5%;
-        margin-right: 5%;
-        margin: auto;
-        width: 90%;
+@media screen and (max-width: 400px) {
+    #kolikot>img {
+        width: 30px;
+        height: 30px;
     }
-    #tilanne{
+    #laatikko>img {
+        width: 15px;
+        height: 15px;
+    }
+    #tilanne {
+        padding-left: 10px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .keskitys {
+        width: 45%;
+        gap: 100px;
+    }
+    #palkinnot {
         width: 400px;
-        font-size: 20px;
-        margin-left: 23%;
-        margin-top: 320px;
-        margin: auto;
-        width: 80%;
     }
-    #palkinnot{
-        margin-top: -530px;
-        margin-left: 20%;
-        margin: auto;
-        width: 90%;
+}
+@media screen and (min-width: 1600px) {
+    .keskitys {
+        width: 35%;
+        gap: 100px;
     }
-    #peli{
+    #palkinnot {
         width: 400px;
-        margin-top: 250px;
-        
     }
-    #peli2{
-        gap: 5px;
-        margin-top: 00px;
-        margin-left: 0%;
-        margin: auto;
-        width: 200%;
-        
-    }
-    #peli3{
-        gap: 20px;
-        margin-top: 5px;
-        margin: auto;
-        width: 200%;
-        margin-left: 0%;
-    }
-    #pelaa{
-        margin-top: 30px;
-        
-        margin: auto;
-        width: 40%;
-        
-    }
-}*/
+}
