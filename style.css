@@ -19,7 +19,7 @@ body {
     background-color: var(--grey);
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
-    margin: 0;
+    margin-top: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -28,121 +28,251 @@ body {
     font-size: 50px;
     text-shadow: 3px 3px var(--shadow);
     text-decoration: solid;
-    
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 7px;
     background-color: var(--box);
     border-radius: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     align-content: center;
-    
-    width: 1550px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 50px;
+    position: center;    
+    width: 1000px;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
     max-width: 100%;
 }
-/*tilanne*/
-#tilanne{
-    background-color: var(--box);
-    border-radius: 10px;
-    width: 400px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    font-family: 'Alkatra', cursive;
-    font-size: 20px;
-    margin-left: 750px;/*aligns box*/
-    
-
-}
-
-/*palkinnot*/
-#palkinnot{
-    background-color: var(--box);
-    border-radius: 10px;
-    width: 450px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: 1400px;
-    margin-top: -230px;
-    
-    
+#kolikot{
+    display: flex;         
+    gap: 20px;
+    margin-left: 10%;
 }
 #laatikko{
     background-color: var(--light);
     border-radius: 10px;
     margin-bottom: 5px;
     margin-right: 0px;
-    
-    
-    
 }
+.keskitys {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;   
+    margin-left: 15%;
+    margin-right: 15%;   
+}
+.keskitys > div {
+    background-color: var(--box);
+    border-radius: 10px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Alkatra', cursive;
+    font-size: 20px;
+    margin-top: 0px;
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 5px;
+} 
+#palkinnot{
+    width: 450px;
+}
+#tilanne {
+    width: 300px;
+    height: 220px;
+}
+.keskitysPeli {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;   
+    margin-left: 10%;
+    margin-right: 10%;  
+    margin-top: 10px; 
+}
+#peli2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background-color: var(--box);
+    width: 560px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 5px;
+    display: flex;         
+    gap: 45px;
+}   
+#peli3{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: var(--box);
+    width: 560px;
+    border-radius: 10px;    
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 5px;   
+    display: flex;         
+    gap: 45px;
+}  
 /*  button  */
 #pelaa{
     background-color: var(--button);
     font-size: 40px;
     font-family: 'Alkatra', cursive;
     border-radius: 10px;
-    
+    height: 100px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin-left: 1500px;
-    margin-top: -100px;       /*fix position*/
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
     border-style: solid;
     border-color: var(--black);
     border-width: 5px;
 }
-
-
-#peli{
-    background-color: var(--box);
-    width: 650px;
-    border-radius: 10px;
-    border: var(--black);
-    
-   /*  border: 5px solid var(--black); */
-
-    margin-top: 20px;
-    margin-left: 600px;
-    
-    padding-left: 50px;
-    padding-right: 50px;
-    
-    
-}
-#peli2{
-    padding-top: 30px;
-    padding-bottom: 10px;
-    
-    display: flex;         
-    gap: 45px;
-}   
-#peli3{
-    padding-top: 10px;
-    padding-bottom: 30px;
-    
-    display: flex;         
-    gap: 45px;
-}  
-    /*     margin: 0px 10px 30px 20px;      this works for puttin gap between img    */
+.container {
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+  input[type="checkbox"] {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .container img {
+    width: 70%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+  #lock1 {
+    background-color: aqua;
+  }
 
 
 
-    @media (max-width: 800px) {     /*   need to align things  also align on different sizes    */
-        #name {
-          font-size: 30px; 
-          text-shadow: 1px 1px var(--shadow);
-          margin-left: 5%;
-          margin-right: 5%;
-          width: 410px;
-        }
-        body{
-            
-        }
+
+
+/*       min 800     */
+@media (max-width: 1000px) { 
+    #name {
+        font-size: 30px; 
+        text-shadow: 1px 1px var(--shadow);
+        width: 410px;
     }
+    #palkinnot{
+        margin-top: -0px;
+        margin-left: 5px;
+        height: 230px;
+    }
+    #laatikko > img {
+        width: 30px;
+        height: 30px;
+    }
+    .keskitysPeli {
+        gap: 5px;   
+        margin: center; 
+        margin-top: 10px; 
+    }
+    #peli2{
+        width: 420px;
+        gap: 10px;
+        margin-top: 00px;
+        margin-left: -10%;
+        padding-left: 20px;
+    }
+    #peli2 > img {
+        width: 80px;
+        height: 80px;
+    }
+    #peli3{
+        width: 420px;
+        gap: 10px;
+        margin-left: -10%;
+        margin-top: 5px;
+        padding-left: 5px;
+    }
+    #peli3 > img {
+        width: 50px;
+        height: 50px;
+    }
+    #pelaa{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #kolikot{       
+        gap: 20px;
+        margin: auto;
+    } 
+    #kolikot > img {
+        width: 40px;
+        height: 40px;
+    }
+}
+/*min-width:501) and ( 
+@media ( max-width: 799px) { 
+    #name {
+        font-size: 30px; 
+        text-shadow: 1px 1px var(--shadow);
+        margin-left: 5%;
+        margin-right: 5%;
+        margin: auto;
+        width: 90%;
+    }
+    #tilanne{
+        width: 400px;
+        font-size: 20px;
+        margin-left: 23%;
+        margin-top: 320px;
+        margin: auto;
+        width: 80%;
+    }
+    #palkinnot{
+        margin-top: -530px;
+        margin-left: 20%;
+        margin: auto;
+        width: 90%;
+    }
+    #peli{
+        width: 400px;
+        margin-top: 250px;
+        
+    }
+    #peli2{
+        gap: 5px;
+        margin-top: 00px;
+        margin-left: 0%;
+        margin: auto;
+        width: 200%;
+        
+    }
+    #peli3{
+        gap: 20px;
+        margin-top: 5px;
+        margin: auto;
+        width: 200%;
+        margin-left: 0%;
+    }
+    #pelaa{
+        margin-top: 30px;
+        
+        margin: auto;
+        width: 40%;
+        
+    }
+}*/
