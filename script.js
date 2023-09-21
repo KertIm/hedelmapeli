@@ -4,6 +4,7 @@ var vuorot = 1;
 var pituus = array.length;
 var panos = 1;
 var rahaa = 50;
+var hinta = 0;
 let check1 = document.getElementById('lock1');
 let check2 = document.getElementById('lock2');
 let check3 = document.getElementById('lock3');
@@ -13,9 +14,11 @@ var uusi1 = 0;
 var uusi2 = 0;
 var uusi3 = 0;
 var uusi4 = 0;
+var palkintoV = 0;
+
 function pelaa() {
 
-    
+    document.getElementById("voitto").innerText = hinta;
     if (rahaa < panos) {
         document.getElementById("rahaa").innerText = "bankrupt";
     } else if (vuorot == 1) {
@@ -31,9 +34,14 @@ function pelaa() {
         document.getElementById("slot3").src = array[uusi3];
         document.getElementById("slot4").src = array[uusi4];
 
-        vuorot = 2
+        if (uusi1 == uusi2 && uusi3 == uusi4 && uusi2 == uusi3 && uusi4 == uusi1) {
+            palkintoV = 1;
+            vuorot = 1;
+            palkinnot();
+        } else {
+            vuorot = 2
         document.getElementById("rahaa").innerText = rahaa;
-
+        }
     } else if (vuorot == 2) {
         rahaa -= panos;
 
@@ -54,15 +62,21 @@ function pelaa() {
             document.getElementById("slot4").src = array[uusi4];
         }
 
+        if (uusi1 == uusi2 && uusi3 == uusi4 && uusi2 == uusi3 && uusi4 == uusi1) {
+            palkintoV = 1;
+            palkinnot();
+        } else if (uusi1 == uusi2 && uusi3 == 4 || uusi2 == uusi3 && uusi4 == 4 || uusi3 == uusi4 && uusi1 == 4) {//3x7   || 
+            palkintoV = 2;
+            palkinnot();
+        }
         vuorot = 1;
-        palkinnot();
         uncheckAll();
     }
 }
 function palkinnot() {
-    var hinta = 0;
-    if (uusi1 == uusi2 == uusi3 == uusi4) { //ei toimi kumpikaa
-        
+    
+    if (palkintoV == 1) {
+        palkintoV = 0;
         if (uusi1 == 0) {//omena
             hinta = panos * 6;
             rahaa += hinta;
@@ -80,14 +94,14 @@ function palkinnot() {
             rahaa += hinta;
         }
 
-    } else if (uusi1 == uusi2 == uusi3 == 4/*  || 
-        uusi2 == uusi3 == uusi4 == 4 || 
-        uusi3 == uusi4 == uusi1 == 4*/){//kolme x 7 pitää laittaa erikseen
-
+    } else if (palkintoV == 2){//kolme x 7
+        palkintoV = 0;
         hinta = panos * 5;
         rahaa += hinta;
     }
+    document.getElementById("voitto").innerText = hinta;
     document.getElementById("rahaa").innerText = rahaa;
+    hinta = 0;
 }
 function panos1() {
     panos = 1;
