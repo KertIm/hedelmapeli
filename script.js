@@ -65,7 +65,7 @@ function pelaa() {
         if (uusi1 == uusi2 && uusi3 == uusi4 && uusi2 == uusi3 && uusi4 == uusi1) {
             palkintoV = 1;
             palkinnot();
-        } else if (uusi1 == uusi2 && uusi3 == 4 || uusi2 == uusi3 && uusi4 == 4 || uusi3 == uusi4 && uusi1 == 4) {//3x7   || 
+        } else if (uusi1 == uusi2 && uusi3 == 4 || uusi2 == uusi3 && uusi4 == 4 || uusi3 == uusi4 && uusi1 == 4 || uusi1 == uusi2 && uusi4 == 4) {//3x7   || 
             palkintoV = 2;
             palkinnot();
         }
