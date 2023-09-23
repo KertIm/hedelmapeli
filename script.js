@@ -20,7 +20,7 @@ function pelaa() {
 
     document.getElementById("voitto").innerText = hinta;
     if (rahaa < panos) {
-        document.getElementById("rahaa").innerText = "bankrupt";
+        document.getElementById("rahaa").innerText = "rahat loppui";
     } else if (vuorot == 1) {
         rahaa -= panos;
 
